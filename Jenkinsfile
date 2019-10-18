@@ -17,8 +17,8 @@ node {
   }
   
   stage('deploy') {
-    def resourceGroup = 'jenkinsTestRun' 
-    def webAppName = 'cheeseWiz'
+    def resourceGroup = 'myResourceGroup' 
+    def webAppName = 'BaconBitz'
     // login Azure
     withCredentials([azureServicePrincipal('cheeseWizServPrinc')]) {
       sh '''
